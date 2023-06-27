@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--bootstrap css-->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--==============CSS========================-->
+    <link href="css/site.css" rel="stylesheet" type="text/css"/>
+
+
+    <title>Dashboard</title>
+</head>
+<body class="bg-dark ">
+ 
+ <div class="wrapper">
+
+
+        <!--Sidebar-->
+        <div class="sidebar show" id="sidebar_id">
+            <ul class="w-100 p-1">
+                <hr>
+                <a><li class="sidebar-item p-2"><img src="./icons/icons8_skyscrapers_35px.png"/>  Company </li></a>
+                <hr>
+                <a><li class="sidebar-item p-2"><img src="./icons/icons8_accounting_35px.png"/> Finance </li></a>
+                <hr>
+                <a><li class="sidebar-item p-2"><img src="./icons/icons8_management_35px.png"/> HR </li></a>
+                <hr>
+                <a><li class="sidebar-item p-2"><img src="./icons/icons8_procurement_35px.png"/> Procurement </li></a>
+                <hr>
+                 <a> <li class="sidebar-item p-2"><img src="./icons/icons8_profit_35px_1.png"> Sales </li></a>
+
+                <hr>
+                <a><li class="sidebar-item p-2"><img src="./icons/icons8_computer_support_35px.png"> IT </li></a>
+                <hr>
+                <a></a><li class="sidebar-item p-2"><img src="./icons/icons8_depot_35px_1.png"> Warehouse </li></a>
+                <hr>
+               <a> <li class="sidebar-item p-2"><img src="./icons/icons8_lease_35px.png"> Property </li></a>
+                <hr>
+               <a> <li class="sidebar-item p-2"><img src="./icons/icons8_traffic_jam_35px.png"> Fleet </li></a>
+                <hr>
+               <a> <li class="sidebar-item p-2"><img src="./icons/icons8_dashboard_layout_35px_1.png"> Dashboard</li></a>
+
+                <hr>
+               <a><li class="sidebar-item p-2"><img src="./icons/icons8_settings_35px.png"> Settings </li></a> 
+
+            </ul>
+        </div>
+        <!--end Sidebar-->
+
+        <!--workspace-->
+        <div class="workspace">
+            <h1>Workspace</h1>
+        </div>
+        <!--end workspace-->
+    
+</div> <!--end wrapper--> 
+
+ 
+<!--TaskBar-->
+<div class="TaskBar">
+    <div class="row p-1">
+
+        
+      
+
+           
+    <div class="col-sm-1 text-start">
+        <button class="btn btn-white  my-2" onclick="SideBar();"><img src="./icons/icons8_sidebar_menu_35px.png"></button>
+    </div>
+
+
+    <div class="col-sm-3">
+        <input type="text" class="form-control my-2" placeholder="Search . . . ">
+    </div>
+
+
+    <!--User shortcut-->
+    <div class="col-sm-5 text-center">
+        <button class="btn btn-white  opacity-04 my-2 mx-1"><img src="./icons/icons8_symlink_file_35px.png"></button>
+   
+        <button class="btn btn-white  opacity-04 my-2 mx-1"><img src="./icons/icons8_symlink_file_35px.png"></button>
+   
+        <button class="btn btn-white  opacity-04 my-2 mx-1"><img src="./icons/icons8_symlink_file_35px.png"></button>
+    
+        <button class="btn btn-white  opacity-04 my-2 mx-1"><img src="./icons/icons8_symlink_file_35px.png"></button>
+    
+        <button class="btn btn-white  opacity-04 my-2 mx-1"><img src="./icons/icons8_symlink_file_35px.png"></button>
+    </div>
+           
+   
+
+       
+    <div class="col-sm-3 text-end">
+        <button class="btn btn-white  my-2 mx-1"><img src="./icons/icons8_customer_35px.png"></button>
+        <button class="btn btn-white  my-2 mx-1"><img src="./icons/icons8_sms_35px.png"></button>
+        <button class="btn btn-white  my-2 mx-1"><img src="./icons/icons8_language_35px.png"></button>
+    </div>
+
+  
+
+
+            
+                
+  
+
+    
+
+    </div><!--end row-->
+</div>
+<!-- end TaskBar-->
+
+
+
+
+
+<!--============js==================-->    
+<script src="js/site.js"></script>    
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function SideBar()
+    {
+        var sidebar = document.getElementById("sidebar_id")
+
+        if (sidebar.classList.contains("show"))
+        {
+            sidebar.classList.remove("show");
+        }
+        else{
+            sidebar.classList.add("show");
+        }
+    }
+</script>
+
+</body>
+</html>
