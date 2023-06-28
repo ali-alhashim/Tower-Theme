@@ -72,6 +72,10 @@ body {
   
 }
 
+ul{
+  padding: 0;
+}
+
 .sidebar.show {
   left: 0px;
   display: block;
@@ -81,10 +85,8 @@ body {
 .sidebar-item
 {
   list-style: none;
- 
-  background-color: #fafafa;
-  border: solid 1px rgb(212, 212, 212);
-  border-radius: 8px;
+  border-top: #999999 solid 1px;
+  
   cursor: pointer;
   padding: 3px;
 }
